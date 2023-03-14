@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/ic_menu_info_details" />
+    <!-- City-->
+    <TextView
+        android:id="@+id/textView_GFiyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dip"
+        android:layout_centerVertical="true"
+        android:paddingBottom ="10dip"
+        android:text="@string/action_list_item_price_placeholder"
+        android:textColor="#040404"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    <TextView
+        android:id="@+id/textView_GTarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_GFiyat"
+        android:layout_alignEnd="@+id/textView_GSatici"
+        android:paddingTop="5dip"
+        android:layout_centerHorizontal="true"
+        android:text="@string/action_list_item_date_placeholder"
+        android:textColor="#343434"
+        android:layout_marginStart="70dp"
+        android:textSize="15sp" />
+    <!-- Weather Information-->
+    <TextView
+        android:id="@+id/textView_GMiktar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_GFiyat"
+        android:layout_alignStart="@+id/textView_GFiyat"
+        android:paddingTop="5dip"
+        android:layout_centerHorizontal="true"
+        android:text="@string/action_list_item_quantity_placeholder"
+        android:textColor="#343434"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/textView_GSatici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_GFiyat"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:paddingTop="5dip"
+        android:layout_centerHorizontal="true"
+        android:text="@string/action_list_item_seller_placeholder"
+        android:textColor="#343434"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp" />
+</RelativeLayout>  

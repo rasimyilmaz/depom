@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".AllProductsActivity">
+	<!-- Main ListView 
+		 Always give id value as list(@android:id/list)
+	-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="7dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:paddingTop="13dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:textColor="#fffcc62e"
+        android:singleLine="false"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:text="@string/all_products_caption" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aydın"
+        android:layout_toLeftOf="@+id/checkBoxIzm"
+        android:id="@+id/checkBoxAyd"
+        android:textColor="#FFFFD43B" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İzmir"
+        android:layout_alignParentRight="true"
+        android:id="@+id/checkBoxIzm"
+        android:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ActionBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ActionBar"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:hint="Barkod veya İsim Giriniz ..."
+            android:minHeight="48dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ara"
+        android:id="@+id/button"
+        android:width="80dp"
+        android:onClick="Ara" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="45dp"
+            android:layout_height="48dp"
+            android:onClick="inputBarcode"
+            android:src="@drawable/scanner_mini" />
+    </LinearLayout>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ActionBar2"/>
+</RelativeLayout>

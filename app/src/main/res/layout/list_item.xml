@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/list_item_name_placeholder"
+        android:id="@+id/textView_isim"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/list_item_b_label_placeholder"
+        android:id="@+id/textViewB"
+        android:layout_below="@+id/textView_isim"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView_Fiyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewF"
+        android:layout_toEndOf="@+id/textViewF"
+        android:text="@string/list_item_price_placeholder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#827717" />
+
+    <TextView
+        android:id="@+id/textView_Miktar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewM"
+        android:layout_toEndOf="@+id/textViewM"
+        android:text="@string/list_item_quantity_placeholder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#2E7D32" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/list_item_price_label_placeholder"
+        android:id="@+id/textViewF"
+        android:layout_alignTop="@+id/textViewB"
+        android:layout_toEndOf="@+id/textViewB"
+        android:layout_marginStart="117dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/list_item_barcode_placeholder"
+        android:id="@+id/textView_Barkod"
+        android:layout_alignBottom="@+id/textViewB"
+        android:layout_toEndOf="@+id/textViewB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/list_item_main_storage_label_placelholder"
+        android:id="@+id/textViewM"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/textView_Fiyat"
+        android:layout_toEndOf="@+id/textView_Fiyat"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textView_Konum"
+        android:layout_marginStart="10dp"
+        android:layout_alignBottom="@id/textView_Miktar"
+        android:layout_toEndOf="@+id/textView_Miktar"
+        android:visibility="invisible" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textView_Kod"
+        android:layout_marginStart="10dp"
+        android:layout_alignBottom="@id/textView_Miktar"
+        android:layout_toEndOf="@+id/textView_Miktar"
+        android:visibility="invisible" />
+</RelativeLayout>

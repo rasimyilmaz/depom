@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">depom</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="get">Get</string>
+    <string name="previous">Previous</string>
+    <string name="placeholder">Text will come here!</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="action_list_item_name_placeholder">VİKİNG KONSANTRE ÇAMAŞIR YUMUŞACITI 1500ML SENSITIVE</string>
+    <string name="list_item_name_placeholder">Sunta Vidasi 4*50 PK:500 AD MERİDYEN</string>
+    <string name="list_item_b_label_placeholder">B:</string>
+    <string name="list_item_price_label_placeholder">F:</string>
+    <string name="list_item_main_storage_label_placelholder">M:</string>
+    <string name="list_item_barcode_placeholder">8691234567890</string>
+    <string name="list_item_quantity_placeholder">15 ad</string>
+    <string name="list_item_price_placeholder">11.25 TL</string>
+    <string name="action_list_item_price_placeholder">5.75 TL</string>
+    <string name="action_list_item_date_placeholder">24.03.2015</string>
+    <string name="action_list_item_quantity_placeholder">20 Adet</string>
+    <string name="action_list_item_seller_placeholder">KALEGIDA SAN.VE TİC.A.Ş.</string>
+    <string name="all_products_caption"><u>Yılmaz Yapı Market</u></string>
+</resources>
